@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TESTING.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Boot.unity
+    guid: aa1f3c938bc2657608ea1c9b7fa1990b
+  - enabled: 1
+    path: Assets/Scenes/Menu/PC/MainMenu_PC_Boot.unity
+    guid: 4e029f53172c0d410a5d73e4397509fd
+  - enabled: 1
+    path: Assets/Scenes/Menu/PC/MainMenu_PC_Colorless.unity
+    guid: 22e7eee0c1db8931f8f3ba3f20d1cf62
+  - enabled: 1
+    path: Assets/Scenes/LevelEditor/LevelEditor.unity
+    guid: 5dbc7a9f7231aefabbcf7824265c6b65
   m_configObjects: {}
