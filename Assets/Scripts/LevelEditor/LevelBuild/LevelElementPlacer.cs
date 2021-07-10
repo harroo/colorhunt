@@ -10,7 +10,7 @@ public class LevelElementPlacer : MonoBehaviour {
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             worldPosition.z = 0;
 
-            PlaceElement(0, worldPosition);
+            PlaceElement(LevelEditorCache.currentSelectedType, worldPosition);
         }
     }
 
