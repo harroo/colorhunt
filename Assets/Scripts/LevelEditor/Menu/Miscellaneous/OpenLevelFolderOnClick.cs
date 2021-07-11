@@ -3,20 +3,25 @@ using System.IO;
 
 using UnityEngine;
 
-using UnityEditor;
+// using UnityEditor;
 
 public class OpenLevelFolderOnClick : MonoBehaviour {
 
     public void OnClick () {
 
+        if (!Directory.Exists(Application.persistentDataPath + "/Levels"))
+            Directory.CreateDirectory(Application.persistentDataPath + "/Levels");
+
         if (Directory.Exists(Application.persistentDataPath + "/Levels"))
             Application.OpenURL("file://" + Application.persistentDataPath + "/Levels");
         else
-            EditorUtility.DisplayDialog(
-                "Something went wrong!",
-                "Unable to locate the Level-Folder, restarting the Application may help.",
-                "Understood."
-            );
+            Application.OpenURL("file://" + Application.persistentDataPath);
+        // else
+        //     EditorUtility.DisplayDialog(
+        //         "Something went wrong!",
+        //         "Unable to locate the Level-Folder, restarting the Application may help.",
+        //         "Understood."
+        //     );
     }
 }
 

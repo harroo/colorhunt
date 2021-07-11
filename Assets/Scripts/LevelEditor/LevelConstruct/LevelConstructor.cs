@@ -1,6 +1,6 @@
 
 using UnityEngine;
-using UnityEditor;
+// using UnityEditor;
 
 using UltimateSerializer;
 using CompressionUtility;
@@ -22,11 +22,11 @@ public class LevelConstructor : MonoBehaviour {
 
         if (level.elements.Count > 1000) {
 
-            if (!EditorUtility.DisplayDialog(
-                "Exceedingly Large Level!",
-                "This Level contains '" + level.elements.Count.ToString() + "' Elements.\nAre you sure you want to load it?",
-                "Yes.", "No.")
-            ) return;
+            // if (!EditorUtility.DisplayDialog(
+            //     "Exceedingly Large Level!",
+            //     "This Level contains '" + level.elements.Count.ToString() + "' Elements.\nAre you sure you want to load it?",
+            //     "Yes.", "No.")
+            // ) return;
         }
 
         foreach (var go in LevelEditorCache.objectCache) {
