@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 214174909}
   - component: {fileID: 214174908}
   - component: {fileID: 214174907}
+  - component: {fileID: 214174910}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -521,13 +522,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420033}
-        m_TargetAssemblyTypeName: FocusController, Assembly-CSharp
-        m_MethodName: SetFocus
-        m_Mode: 2
+      - m_Target: {fileID: 214174910}
+        m_TargetAssemblyTypeName: LoadSceneOnClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1092548065}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -571,6 +572,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214174905}
   m_CullTransparentMesh: 0
+--- !u!114 &214174910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214174905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4722424eabfee05c7bc582a311e4cc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: LoadLevelToPlay
 --- !u!1 &304114818
 GameObject:
   m_ObjectHideFlags: 0
