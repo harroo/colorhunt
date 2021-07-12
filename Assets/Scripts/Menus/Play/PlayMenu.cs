@@ -9,6 +9,9 @@ public class PlayMenu : MonoBehaviour {
 
     private void Start () {
 
+        if (!Directory.Exists(Application.persistentDataPath + "/Levels"))
+            Directory.CreateDirectory(Application.persistentDataPath + "/Levels");
+
         LoadView();
     }
 
