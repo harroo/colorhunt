@@ -1,14 +1,9 @@
 
- // ♥ StartPositionDisplay.cs
+ // ♥ FollowParent.cs
 
 /*
 
     *  ♥ By Tahlia P. Evlyne, via Teletype ♥ *
-
-    * A modified version of 'FollowParent.cs'.
-
-    * Tailored for the specific purpose of managing the
-    * StartPosition-GameObject's position.
 
 */
 
@@ -19,7 +14,7 @@ using UnityEngine;
 // I'm over commenting this now I can just tell.
 // But at least it looks prettyyy!! ♥ ♥ ♥ ♥
 
-public class StartPositionDisplay : MonoBehaviour { // ♥
+public class FollowParent : MonoBehaviour { // ♥
 
 
     // A Reference-Variable for the Parent-Transform.
@@ -36,13 +31,6 @@ public class StartPositionDisplay : MonoBehaviour { // ♥
 
         // Disown the Parent-Transform.
         transform.parent = null ;
-
-        // Reset the localScale to be snug.
-        transform.localScale = new Vector3 (
-
-            8.0f, 8.0f, 8.0f
-
-        ) ;
 
     } // ♥
 

@@ -40,7 +40,12 @@ public class PlayerMovement : MonoBehaviour {
 
     public bool onGround;
 
-    private void OnCollisionEnter2D (Collision2D collision) {
+    private void OnCollisionEnter2D (Collision2D collision) {Debug.Log("HIT");
+
+        onGround = true;
+    }
+
+    private void OnCollisionStay2D (Collision2D collision) {
 
         onGround = true;
     }
