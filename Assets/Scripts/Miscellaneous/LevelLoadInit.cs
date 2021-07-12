@@ -9,8 +9,8 @@ public class LevelLoadInit : MonoBehaviour {
 
     private void Awake () {
 
-        if (!Directory.Exists(Application.persistentDataPath + LevelLoadInfo.LevelPath))
-            Directory.CreateDirectory(Application.persistentDataPath + LevelLoadInfo.LevelPath);
+        if (!Directory.Exists(Application.persistentDataPath + "/Temp"))
+            Directory.CreateDirectory(Application.persistentDataPath + "/Temp");
 
         string loadPath = Application.persistentDataPath + LevelLoadInfo.LevelPath;
 
