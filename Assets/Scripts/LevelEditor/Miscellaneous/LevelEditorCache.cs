@@ -10,4 +10,8 @@ public static class LevelEditorCache {
     public static List<GameObject> objectCache = new List<GameObject>();
 
     public static int currentSelectedType;
+
+    public static bool playTesting;
+
+    public static float scaleX, scaleY;
 }

@@ -21,6 +21,9 @@ public class BootMethod : MonoBehaviour {
 
         if (!Directory.Exists(Application.persistentDataPath + "/Story"))
             Directory.CreateDirectory(Application.persistentDataPath + "/Story");
+
+        if (!Directory.Exists(Application.persistentDataPath + "/Temp"))
+            Directory.CreateDirectory(Application.persistentDataPath + "/Temp");
     }
 
     private void LoadMenu () {
